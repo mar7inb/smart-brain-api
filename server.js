@@ -14,13 +14,13 @@ const db = knex({
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: {  
-    rejectUnauthorized: false
+    rejectUnauthorized: true
 
     }
   }});
 
-const app = express();
-
+//const app = express();
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors())
 
