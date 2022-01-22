@@ -17,7 +17,7 @@ const db = knex({
     rejectUnauthorized: false
 
     }
-  });
+  }});
 
 const app = express();
 
