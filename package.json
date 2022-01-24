@@ -2,15 +2,14 @@
   "devDependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "engines": {
-    "node": "16.13.0"
-},
-
-"package.json": "^2.0.1"
+    "package.json": "^2.0.1"
   },
-  "name": "node",
+  "name": "smart-brain",
   "version": "1.0.0",
   "main": "index.js",
+   "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "start": "node server.js"
   },
