@@ -1,28 +1,26 @@
 {
-  "devDependencies": {
-    "body-parser": "^1.19.1",
-    "express": "^4.17.2",
-    "package.json": "^2.0.1"
-  },
-  "name": "smart-brain",
+  "name": "smartbrain",
   "version": "1.0.0",
-  "main": "index.js",
-   "engines": {
+  "main": "server.js",
+  "engines": {
     "node": "16.13.0"
   },
   "scripts": {
     "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "bcrypt-nodejs": "^0.0.3",
-    "clarifai": "^2.9.1",
-    "clarifai-nodejs-grpc": "^8.0.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "knex": "^0.95.15",
-    "pg": "^8.7.1",
-    "express": "^4.17.2"
-  }
+    "express": "^4.17.1",
+    "knex": "^1.0.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "description": ""
 }
