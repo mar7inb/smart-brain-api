@@ -5,7 +5,7 @@
     "node": "^16.3.0",
     "package.json": "^2.0.1"
   },
-  "name": "smart-brain-api",
+  "name": "node",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
