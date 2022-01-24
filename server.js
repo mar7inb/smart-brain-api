@@ -9,20 +9,25 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+
+
 const db = knex({
+  // Enter your own database information here based on what you created
   client: 'pg',
   connection: {
-    connectionString: process.env.DATABASE_URL,
-    ssl: {  
-    rejectUnauthorized: true
+    host : '127.0.0.1',
+    user : '',
+    password : '',
+    database : 'smartbrain'
+  }
+});
 
-    }
-  }});
+  
+const app = express();
 
-//const app = express();
-app.use(express.json());
+app.use(cors()) 
 app.use(bodyParser.json());
-app.use(cors())
+
 
 
 
