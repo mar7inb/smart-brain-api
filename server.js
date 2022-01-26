@@ -15,10 +15,9 @@ const db = knex({
   // Enter your own database information here based on what you created
   client: 'pg',
   connection: {
-    host : 'postgresql-clear-47804',
-    user : '',
-    password : '',
-    database : 'smartbrain'
+    host : process.env.DATABASE_URL,
+    ssl: true,
+    
   }
 });
 
